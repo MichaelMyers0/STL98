@@ -4,14 +4,14 @@
 enum {vec_cap = 10};
 int main()
 {
-	int i;
 	vector<int> v;
-	for (i = 0; i < vec_cap; i++)
-		v.push_back(i);
-	auto iter = add_ten(v);
-	while (iter != v.end())
+	vector<double> dv;
+	dv.push_back(3.14);
+	dv.push_back(4.45);
+	auto iter = add_ten(dv);
+	while (iter != dv.rend())
 	{
-		printf("%d\n", *iter);
+		printf("%f\n", *iter);
 		iter++;
 	}
 	exit(0);
